@@ -1,0 +1,248 @@
+.hongNav{
+    position: relative;
+    z-index: 2;
+}
+.hongNav .tapNav{
+    background: none;
+}
+.hongbao_ban{
+    margin: 0 5%;
+    padding: .2rem 0px;
+    background: #feefd1;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: .25rem;
+}
+.hongbao_ban img{
+    float: left;
+    width: 1rem;
+    margin-left: .25rem;
+}
+.hongbao_ban h2{
+    float: left;
+    font-size: .3rem;
+    color: #202020;
+    margin-left: .2rem;
+    text-align: left;
+    margin-top: .2rem;
+}
+.hongbao_ban h2 span{
+    font-size: .2rem;
+    color: #404040;
+    font-weight: initial;
+}
+.hongbao_ban .lingqu{
+    float: right;
+    margin-right: .25rem;
+    margin-top: .1rem;
+    width: auto;
+}
+.hongbao_ban .lingqu a{
+    font-size: .3rem;
+    padding: .08rem .2rem;
+    color: #ffffff;
+    background: #eb4341;
+    border-radius: 4px;
+    margin-top: .2rem;
+    display: inline-block;
+}
+.hongbao_ban .lingqu span{
+    font-size: .2rem;
+    color: #505050;
+    display: none;
+}
+
+
+.lingqu{
+    position: relative;
+    width: 100%;
+    margin-top: -1rem;
+}
+.lingqu .bgimg{
+    width: 100%;
+}
+.lingqu .jiane{
+    width: 100%;
+    position: absolute;
+    top: 2.75rem;
+    text-align: center;
+}
+.lingqu .jiane h4,
+.lingqu .jiane span{
+    font-size: .28rem;
+    color: #7a6232;
+    font-weight: initial;
+}
+.lingqu .jiane span{
+    color: #988661;
+}
+.lingqu .jiane p,.lingqu .jiane p span{
+    color: #d23415;
+    font-size: .7rem;
+    line-height: .5rem;
+    font-weight: bold;
+    margin-top: .2rem;
+}
+.lingqu .jiane p i{
+    font-size: .28rem;
+    font-style:normal
+}
+.lingqu .wenben{
+    text-align: center;
+}
+.lingqu .wenben h2{
+    font-size: .38rem;
+    color: #323232;
+    font-weight: initial;
+    margin-bottom: .12rem;
+    margin-top: .1rem;
+}
+.lingqu .wenben p{
+    font-size: .26rem;
+    color: #646464;
+    padding: 0 .3rem;
+}
+.xinxi{
+    margin: auto .35rem;
+    margin-top: .3rem;
+    border: 1px solid #E6E6E6;
+    padding: .3rem .35rem;
+    margin-bottom: .35rem;
+    text-align: left;
+    position: relative;
+}
+.xinxi input[type='number']{
+    border: none;
+    font-size: 14px;
+    border-radius: 4px;
+    background: #F0F0F0 url("../img/hongbao_phone.png"/*tpa=http://m.yiko.org/mobile/img/hongbao_phone.png*/) no-repeat left center;
+    background-size: 25px;
+    padding: 10px 10px 10px 26px;
+    width: 89%;
+    margin-bottom: 10px;
+}
+.xinxi input.code[type='number']{
+
+    background: #F0F0F0 url("../img/hongbao_code.png"/*tpa=http://m.yiko.org/mobile/img/hongbao_code.png*/) no-repeat left center;
+    background-size: 25px;
+}
+.xinxi .obtain{
+    width: 2rem;
+    background: #F1AD48 none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    height: .75rem;
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+    font-size: .28rem;
+    margin: 0px;
+}
+
+.xinxi>div{
+    font-size: 12px;
+    color: #505050;
+    text-align: left;
+}
+.xinxi>div input[type='checkbox']{
+    margin-right: 5px;
+}
+.xinxi>div a{
+    color: #EC5D2F;
+    cursor:pointer;
+}
+.xinxi i{
+    font-size: 12px;
+    color: #9F9F9F;
+}
+.xinxi img{
+    float: left;
+    width: .45rem;
+}
+.xinxi button{
+    background: #F1AD48 none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    height: 45px;
+    margin: 20px auto 0;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.tishi{
+    font-size: .2rem;
+    color: #9F9F9F;
+    background: #f0f0f0;
+    padding: .3rem .35rem;
+    text-align: left;
+    /*position: absolute;*/
+    bottom: 0px;
+}
+
+.guize .box{
+    font-size: 16px;
+    padding: 20px;
+    padding-bottom: .8rem;
+}
+
+.guize .box h2{
+    color: #F14848;
+    text-align: center;
+    font-weight: initial;
+}
+.guize .box h4{
+    color: #404040;
+    font-size: 20px;
+    margin-bottom: 14px;
+    margin-top: 14px;
+    text-align: left;
+}
+.guize .box p{
+    font-size: 14px;
+    line-height: 28px;
+    text-align: left;
+}
+
+
+.chenggong{
+    width: 5rem;
+    height: 2rem;
+    position: absolute;
+    z-index: 99999;
+    top: 30%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -2.5rem;
+    background: #ffffff;
+    border-radius: 2px;
+    text-align: center;
+    padding: 20px 0px;
+    display: none;
+}
+.chenggong_bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,.6);
+    z-index: 9999;
+    display: none;
+}
+.chenggong img{
+    width: 40px;
+}
+.chenggong h2{
+    font-size: 25px;
+    color: #505050;
+    font-weight: initial;
+}
+.chenggong span{
+    font-size: 14px;
+    color: #9F9F9F;
+}

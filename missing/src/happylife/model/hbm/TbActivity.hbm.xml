@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-21 15:47:52 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="happylife.model.TbActivity" table="tb_activity" catalog="miss">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+             <generator class="increment"/>
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="100" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="1000" not-null="true" />
+        </property>
+        <property name="status" type="int">
+            <column name="status" not-null="true">
+                <comment>状态 0：未进行 1：在进行;</comment>
+            </column>
+        </property>
+        <property name="isThresholdSet" type="int">
+            <column name="is_threshold_set"/>
+        </property>
+        <property name="iconPicture" type="string">
+            <column name="icon_picture" length="100" />
+        </property>
+        <property name="createTime" type="timestamp">
+            <column name="create_time" length="19" not-null="true" />
+        </property>
+        <property name="ModifyTime" type="timestamp">
+            <column name="modify_time" length="19" />
+        </property>
+        <property name="extProps" type="string">
+            <column name="ext_props" length="500" />
+        </property>
+
+    </class>
+</hibernate-mapping>

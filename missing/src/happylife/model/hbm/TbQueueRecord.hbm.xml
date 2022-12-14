@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-21 15:47:52 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="happylife.model.TbQueueRecord" table="tb_queue_record" catalog="miss">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="record_id" />
+            <generator class="identity" />
+        </id>
+
+        <property name="fkOpenId" type="string">
+            <column name="fk_open_id" length="100">
+                <comment>用户openid</comment>
+            </column>
+        </property>
+        
+        <property name="orderId" type="string">
+            <column name="order_id" length="100">
+                <comment>用户openid</comment>
+            </column>
+        </property>
+
+        <property name="fkMchId" type="int">
+            <column name="fk_mch_id" not-null="true">
+                <comment>&#189;&#187;&#210;&#215;&#188;&#199;&#194;&#188;&#203;&#249;&#202;&#244;&#181;&#196;&#201;&#204;&#188;&#210;</comment>
+            </column>
+        </property>
+        <property name="fkMchstaffId" type="int">
+            <column name="fk_mchstaff_id" >
+                <comment>
+                &#189;&#187;&#210;&#215;&#203;&#249;&#202;&#244;&#181;&#196;&#215;&#162;&#178;&#225;&#211;&#195;&#187;&#167;&#187;&#242;&#213;&#223;&#185;&#216;&#215;&#162;&#211;&#195;&#187;&#167;ID</comment>
+            </column>
+        </property>
+        <property name="fkTransactionId" type="int">
+            <column name="fk_transaction_id" >
+                <comment>&#210;&#215;&#189;&#187;&#201;&#230;&#188;&#176;&#181;&#196;&#189;&#240;&#182;&#238;</comment>
+            </column>
+        </property>
+        <property name="startTime" type="timestamp">
+            <column name="start_time" length="19">
+                <comment>&#189;&#187;&#210;&#215;&#178;&#250;&#201;&#250;&#181;&#196;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="endTime" type="timestamp">
+            <column name="end_time" length="19" >
+                <comment>&#189;&#187;&#210;&#215;&#178;&#250;&#201;&#250;&#181;&#196;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="status" type="int">
+            <column name="status" not-null="true">
+                <comment>&#202;&#199;&#183;&#241;&#210;&#209;&#190;&#173;&#214;&#167;&#184;&#182; &#163;&#186; 0 &#206;&#180; &#179;&#201;&#185;&#166;&#214;&#167;&#184;&#182; 1
+                &#163;&#172;&#210;&#209;&#190;&#173;&#179;&#201;&#185;&#166;</comment>
+            </column>
+        </property>
+        <property name="isScan" type="int">
+            <column name="is_scan" not-null="true">
+            </column>
+        </property>
+        <property name="extProps" type="string">
+            <column name="ext_props" length="500">
+                <comment>扩展字段</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

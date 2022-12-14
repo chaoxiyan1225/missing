@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-21 15:47:52 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="happylife.model.TbRedeemCode" table="tb_redeem_code" catalog="miss">
+        <id name="codeId" type="java.lang.Integer">
+            <column name="code_id" />
+            <generator class="identity" />
+        </id>
+        <property name="randomCode" type="string">
+            <column name="random_code" length="64" not-null="true">
+                <comment>&#203;&#230;&#187;&#250;&#181;&#196;&#215;&#214;&#183;&#251;&#180;&#174; 30&#184;&#246;&#215;&#214;&#183;&#251;&#196;&#218;</comment>
+            </column>
+        </property>
+        <property name="fkProductId" type="java.lang.Integer">
+            <column name="fk_product_id">
+                <comment>外键关联商品ID</comment>
+            </column>
+        </property>
+        <property name="isUsed" type="boolean">
+            <column name="is_used" not-null="true">
+                <comment>&#183;&#241;&#202;&#199;&#210;&#209;&#190;&#173;&#202;&#185;&#211;&#195;&#185;&#253;</comment>
+            </column>
+        </property>
+        <property name="usedTime" type="timestamp">
+            <column name="used_time" length="19" not-null="true" />
+        </property>
+        <property name="createType" type="int">
+            <column name="create_type" not-null="true">
+                <comment>0: 1: 2:</comment>
+            </column>
+        </property>
+        <property name="productNum" type="int">
+            <column name="product_num" not-null="true" />
+        </property>
+        <property name="fkMchId" type="java.lang.Integer">
+            <column name="fk_mch_id">
+                <comment>外键关联商家ID</comment>
+            </column>
+        </property>
+        <property name="fkOpenId" type="string">
+            <column name="fk_open_id" not-null="true">
+                <comment>
+                注册用户的openId</comment>
+            </column>
+        </property>
+        <property name="payMoney" type="java.lang.Integer">
+            <column name="pay_money">
+                <comment>&#184;&#182;&#183;&#209;&#189;&#240;&#182;&#238;</comment>
+            </column>
+        </property>
+        <property name="validDate" type="timestamp">
+            <column name="valid_date" length="19">
+                <comment>有效期</comment>
+            </column>
+        </property>
+        <property name="codeInfo" type="string">
+            <column name="code_info">
+                <comment>&#195;&#232;&#202;&#246;&#208;&#197;&#207;&#162;</comment>
+            </column>
+        </property>
+        <property name="isSendok" type="int">
+            <column name="is_sendok" not-null="true" />
+        </property>
+        <property name="codeCreateTime" type="timestamp">
+            <column name="code_create_time" length="19" not-null="true">
+                <comment>&#182;&#210;&#187;&#187;&#194;&#235;&#201;&#250;&#179;&#201;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

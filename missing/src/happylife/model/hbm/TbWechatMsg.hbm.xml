@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-21 15:47:52 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="happylife.model.TbWechatMsg" table="tb_wechat_msg" catalog="miss">
+        <id name="id" type="string">
+            <column name="id" length="155" />
+            <generator class="assigned" />
+        </id>
+        <property name="content" type="string">
+            <column name="content" length="65535" />
+        </property>
+        <property name="signType" type="string">
+            <column name="sign_type" length="155" />
+        </property>
+        <property name="inputCharset" type="string">
+            <column name="input_charset" length="155" />
+        </property>
+        <property name="sign" type="string">
+            <column name="sign" length="155" />
+        </property>
+        <property name="tradeMode" type="string">
+            <column name="trade_mode" length="155" />
+        </property>
+        <property name="tradeState" type="string">
+            <column name="trade_state" length="155" />
+        </property>
+        <property name="partner" type="string">
+            <column name="partner" length="155" />
+        </property>
+        <property name="bankType" type="string">
+            <column name="bank_type" length="155" />
+        </property>
+        <property name="bankBillno" type="string">
+            <column name="bank_billno" length="155" />
+        </property>
+        <property name="totalFee" type="string">
+            <column name="total_fee" length="155" />
+        </property>
+        <property name="feeType" type="string">
+            <column name="fee_type" length="155" />
+        </property>
+        <property name="notifyId" type="string">
+            <column name="notify_id" length="155" />
+        </property>
+        <property name="transactionId" type="string">
+            <column name="transaction_id" length="155" />
+        </property>
+        <property name="outTradeNo" type="string">
+            <column name="out_trade_no" length="155" />
+        </property>
+        <property name="attach" type="string">
+            <column name="attach" length="155" />
+        </property>
+        <property name="timeEnd" type="string">
+            <column name="time_end" length="155" />
+        </property>
+        <property name="transportFee" type="string">
+            <column name="transport_fee" length="155" />
+        </property>
+        <property name="productFee" type="string">
+            <column name="product_fee" length="155" />
+        </property>
+        <property name="discount" type="string">
+            <column name="discount" length="155" />
+        </property>
+        <property name="time" type="timestamp">
+            <column name="time" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

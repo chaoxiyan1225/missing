@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@font-face {
+        font-family: 'cate_icon';
+        src: url(http://ms0.meituan.net/touch/css/i/fonts/cate4.woff?v4) format("woff"), url(http://ms0.meituan.net/touch/css/i/fonts/cate4.otf?v4); }
+@font-face {
+        font-family: 'base_icon';
+        src: url(http://ms0.meituan.net/touch/css/i/fonts/base14.woff) format("woff"), url(http://ms0.meituan.net/touch/css/i/fonts/base14.otf); }
+
+.dealtype-icon.ktv-dealtype-icon {
+    background: #8a86e3;
+}
+.no-mark{
+    font-size: 0.24rem;
+    color: #999999;
+}
+
+#iSlider-wrapper {
+    height: 1.77rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+#iSlider-wrapper .islider-outer {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+#iSlider-wrapper .islider-outer li {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    list-style: none;
+}
+
+
+.islider-dot-wrap {
+    position: absolute;
+    left: 50%;
+    z-index: 19;
+    height: .35rem;
+    bottom: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.islider-dot {
+    width: .11rem;
+    height: .11rem;
+    background: #f6f6f6;
+    display: inline-block;
+    position: absolute;
+    border: .02rem solid #e4ded9;
+    border-radius: 50%;
+    position: relative;
+    margin: .06rem;
+}
+
+.islider-dot-wrap .active {
+    background: #06c1ae;
+    border: .02rem solid #06c1ae;
+}
+
+
+.shoppingmall-item {
+    width: 100%;
+    display: block;
+    height: 100%;
+    padding: .2rem .2rem .34rem .2rem;
+    background: #FFF;
+    border-bottom: .02rem solid #d4d0c6;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.shoppingmall-item .img{
+    float: left;
+    margin-right: .24rem;
+    width: 2.1rem;
+    height: 1.26rem;
+    overflow: hidden;
+}
+
+.shoppingmall-item .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.shoppingmall-item .info {
+    float: left;
+    max-width: 3.5rem;
+}
+
+.shoppingmall-item .info > h3 {
+    margin: 0.08rem 0 .35rem 0;
+    font-size: .3rem;
+    color: #333;
+    /*height: .34rem;*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.shoppingmall-item .info .geo {
+    position: absolute;
+    top: 0.32rem;
+    right: 0.2rem;
+    font-size: .24rem;
+    color: #999;
+}
+
+.shoppingmall-item .info > p >span {
+    padding: .02rem .06rem;
+    margin-right: .08rem;
+    display: inline-block;
+    color: #f58300;
+    border: .02rem solid #f58300;
+    font-size: .22rem;
+    border-radius: .04rem;
+}

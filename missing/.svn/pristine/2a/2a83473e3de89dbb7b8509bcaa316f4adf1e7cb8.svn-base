@@ -1,0 +1,71 @@
+package happylife.util.config;
+
+/** 该配置类 配置了系统的索引 key 值
+ * @author 闫朝喜
+ * 
+ * by  2016-5-22
+ *
+ */
+public class IndexConfig {
+
+	/**
+	 * 存储在COOKIE中的后台管理员ID
+	 */
+	public static final String ADMIN_SESSION_KEY="systemAdmin";
+	
+	/**
+	 * 存储在COOKIE中的商户信息
+	 */
+	public static final String MCHUSER_SESSION_KEY="mchUser";
+	
+	/**
+	 * 存储在COOKIE中的微信用户ID
+	 */
+	public static final String SESSION_WECHATUSER_KEY = "wechatuser";//用户ID
+	
+	public static final String RELATIVE_PATH = "\\missing\\staticfile\\wechatimages";
+	
+	public static final String RELATIVE_PATH_PREFIX = "/missing/staticfile/wechatimages";
+	
+	//TODO: 改成 阿里云下面的工程里面的tomcat绝对路径下面
+	public static final String PROJECT_ABSTRACT_PATH_STRING = "D:\\workspace\\missing\\WebContent\\staticfile\\wechatimages";
+	
+	/**
+	 * 商家的商品图片存储路径
+	 */
+	public static final String MCHUSER_PRODUCTS_PICTURE_SAVE_BASEPATH = PROJECT_ABSTRACT_PATH_STRING;
+	
+	/**
+	 * 商家的商品图片存储路径
+	 */
+	public static final String MCHUSER_PRODUCTS_PICTURE_TMEP_BASEPATH = PROJECT_ABSTRACT_PATH_STRING+"\\tem";
+	
+	/**
+	 * 商家自己的图片存储路径
+	 */
+	public static final String MCHUSER_PICTURE_TMEP_BASEPATH = PROJECT_ABSTRACT_PATH_STRING+"\\mchusers\\tem";
+	
+	/**
+	 * 商家的自己的图片存储路径
+	 */
+	public static final String MCHUSER_PICTURE_SAVE_BASEPATH = PROJECT_ABSTRACT_PATH_STRING+"\\mchusers";
+	
+	
+	//商家放到数据库中的地址 
+	public static final String MCHUSER_PICTURE_IN_DB = "staticfile\\wechatimages\\mchusers\\";
+	
+	//商家放到数据库中的地址 
+	public static final String MCHUSER_PRODUCT_PICTURE_IN_DB = "staticfile\\wechatimages\\mchusers";
+	
+	/**
+	 * 从 微信接入的链接的公共前缀
+	 */
+	public static String  USER_FROM_WECHAT_URI_PREFIX= "/wechatuser"; //
+
+	/**
+	 * 工程URL
+	 */
+	public static final String HOME_URL="http://127.0.0.1:8080/missing";
+
+	
+}

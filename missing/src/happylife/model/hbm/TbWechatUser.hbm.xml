@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-21 15:47:52 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="happylife.model.TbWechatUser" table="tb_wechat_user" catalog="miss">
+        <id name="userId" type="java.lang.Integer">
+            <column name="user_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userNickName" type="string">
+            <column name="user_nick_name" length="155" />
+        </property>
+        <property name="userHeadPath" type="string">
+            <column name="user_head_path"  length="155">
+                <comment>&#206;&#162;&#208;&#197;&#205;&#183;&#207;&#241;&#194;&#183;&#190;&#182;</comment>
+            </column>
+        </property>
+        <property name="userTelNum" type="string">
+            <column name="user_tel_num" length="20" />
+        </property>
+        <property name="userOpenid" type="string">
+            <column name="user_openid" length="155" />
+        </property>
+        <property name="userSex" type="java.lang.Boolean">
+            <column name="user_sex">
+                <comment>0: &#197;&#174; 1: &#196;&#208;</comment>
+            </column>
+        </property>
+        <property name="userRewardPoint" type="int">
+            <column name="user_reward_point" not-null="true">
+                <comment>&#187;&#167;&#211;&#195;&#187;&#253;&#183;&#214;</comment>
+            </column>
+        </property>
+        <property name="userLevel" type="int">
+            <column name="user_level" not-null="true">
+                <comment>&#187;&#167;&#211;&#195;&#181;&#196;&#188;&#182;&#177;&#240;</comment>
+            </column>
+        </property>
+        <property name="userRegisterTime" type="timestamp">
+            <column name="user_register_time" length="19" not-null="true" />
+        </property>
+        <property name="extProps" type="string">
+            <column name="ext_props" length="500" />
+        </property>
+    </class>
+</hibernate-mapping>

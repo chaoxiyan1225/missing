@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-21 15:47:52 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="happylife.model.TbProduct" table="tb_product" catalog="miss">
+        <id name="productId" type="java.lang.Integer">
+            <column name="product_id" />
+            <generator class="identity" />
+        </id>
+        <property name="productName" type="string">
+            <column name="product_name" length="155" not-null="true">
+                <comment>产品名</comment>
+            </column>
+        </property>
+        <property name="productPrice" type="int">
+            <column name="product_price" not-null="true">
+                <comment>产品价格</comment>
+            </column>
+        </property>
+        <property name="fkMchId" type="int">
+            <column name="fk_mch_id" not-null="true">
+                <comment>商家的外键ID</comment>
+            </column>
+        </property>
+        <property name="saleTotalTimes" type="int">
+            <column name="sale_total_times" not-null="true">
+                <comment>售卖次数</comment>
+            </column>
+        </property>
+        <property name="saleTotalMoney" type="int">
+            <column name="sale_total_money" not-null="true">
+                <comment>总金额</comment>
+            </column>
+        </property>
+        <property name="likeCounts" type="int">
+            <column name="like_counts" not-null="true">
+                <comment>喜欢次数：默认0</comment>
+            </column>
+        </property>
+        <property name="dislikeCounts" type="int">
+            <column name="dislike_counts" not-null="true">
+                <comment>商品被踩次数：默认是0</comment>
+            </column>
+        </property>
+        <property name="productStatus" type="int">
+            <column name="product_status" not-null="true">
+                <comment>0: 待审核    1：下架  2：上架  3：置顶</comment>
+            </column>
+        </property>
+        <property name="productHeadPicture" type="string">
+            <column name="product_head_picture" length="255">
+                <comment>商家头像图片地址</comment>
+            </column>
+        </property>
+        <property name="productType" type="string">
+            <column name="product_type" length="100" >
+                <comment>商品的种类：如中餐 火锅  串串</comment>
+            </column>
+        </property>
+        <property name="productContentPicture" type="string">
+            <column name="product_content_picture" length="1000" >
+                <comment>内容图片的地址集：以 “|” 作分割</comment>
+            </column>
+        </property>
+        <property name="productDescription" type="string">
+            <column name="product_description" length="1000" >
+                <comment>商品的描述信息</comment>
+            </column>
+        </property>
+        <property name="discountPrice" type="int">
+            <column name="discount_price" not-null="true">
+                <comment>&#201;&#204;&#198;&#183;&#188;&#219;&#184;&#241;</comment>
+            </column>
+        </property>
+        <property name="discountPercent" type="int">
+            <column name="discount_percent" not-null="true">
+                <comment>折扣比例，百分百</comment>
+            </column>
+        </property>
+        <property name="createTime" type="timestamp">
+            <column name="create_time" length="19" not-null="true">
+                <comment>&#201;&#204;&#198;&#183;&#204;&#237;&#188;&#211;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="modifyTime" type="timestamp">
+            <column name="modify_time" length="19" not-null="true">
+                <comment>修改时间</comment>
+            </column>
+        </property>
+        <property name="extProps" type="string">
+            <column name="ext_props" length="1000" >
+                <comment>扩展字段</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>
